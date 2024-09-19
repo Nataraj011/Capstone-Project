@@ -1,0 +1,57 @@
+.card {
+    border: none;
+    transition: all 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    border-radius: 10px 10px 0 0;
+    background-color: #87ceeb; /* Sky blue color */
+    color: #333; /* Darker text color for better contrast */
+  }
+  
+  .form-control {
+    border-radius: 20px;
+  }
+  
+  .btn {
+    border-radius: 20px;
+    transition: all 0.3s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .alert {
+    border-radius: 10px;
+  }
+  
+  .mr-2 {
+    margin-right: 0.5rem;
+  }
+  
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  
+  .font-weight-bold {
+    font-weight: bold;
+  }
+  
+  /* Update button color to match the header */
+  .btn-primary {
+    background-color: #87ceeb;
+    border-color: #87ceeb;
+    color: #333;
+  }
+  
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: #5fb6e5;
+    border-color: #5fb6e5;
+    color: #333;
+  }

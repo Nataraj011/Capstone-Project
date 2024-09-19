@@ -1,0 +1,83 @@
+/* BoardAdmin.css */
+
+:root {
+  --primary-color:white;
+  --secondary-color: #87ceeb;
+  --text-color: white;
+  --hover-color: #34495e;
+}
+
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.admin-sidebar {
+  width: 250px;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 20px 0;
+  border-radius: 10px;
+
+}
+
+.admin-logo {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+.admin-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-nav-item {
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-nav-item:hover {
+  background-color: var(--hover-color);
+}
+
+.admin-nav-item svg {
+  margin-right: 10px;
+  width: 20px;
+}
+
+.admin-content {
+  flex-grow: 1;
+  background-color: var(--bg-color);
+  margin-left: 20px;
+}
+
+
+.admin-header {
+  background-color: #87ceeb;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.admin-heading {
+  color: white;
+  margin: 0;
+}
+
+.admin-main {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .admin-container {
+    flex-direction: column;
+  }
+
+  .admin-sidebar {
+    width: 100%;
+  }
+}

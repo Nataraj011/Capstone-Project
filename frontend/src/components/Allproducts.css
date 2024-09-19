@@ -1,0 +1,139 @@
+/* Allproducts.css */
+
+.products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.products-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-header {
+  background-color: #3498db;
+  padding: 1rem;
+}
+
+.product-title {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.product-body {
+  padding: 1.5rem;
+}
+
+.feature-section {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: 1rem;
+}
+
+.feature-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.feature-title {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.parameters-title {
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.parameters-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.parameter-item {
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parameter-name {
+  font-weight: bold;
+  color: #34495e;
+}
+
+.parameter-value {
+  color: #2980b9;
+}
+
+.parameter-type {
+  color: #95a5a6;
+  font-size: 0.9rem;
+}
+
+/* Fade animation */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms ease-in, transform 500ms ease-out;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms ease-in, transform 500ms ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
